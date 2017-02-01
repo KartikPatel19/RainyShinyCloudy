@@ -16,4 +16,8 @@ let APP_ID="&appid="
 let API_KEY="e7917eb87bbbc333eacbb295d5ea5b70"
 
 
+typealias DownloadComplete = () -> ()
+
 let CURRENT_WHETHER_URL="\(BASE_URL)\(LATITUDE)-39\(LONGITUTDE)123\(APP_ID)\(API_KEY)"
+
+

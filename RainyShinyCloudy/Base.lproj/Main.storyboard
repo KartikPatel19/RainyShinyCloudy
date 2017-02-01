@@ -95,7 +95,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GZx-KS-Fb0" id="xck-hd-JsF">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="79"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LWH-6A-4mG">
@@ -178,8 +178,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="DateLable" destination="lMI-AE-7Hu" id="Enf-XL-eKu"/>
-                        <outlet property="currentTemp" destination="dYC-Hd-oFE" id="bD2-7N-FrX"/>
+                        <outlet property="DateLable" destination="lMI-AE-7Hu" id="Lg1-Pw-eni"/>
+                        <outlet property="currentTempe" destination="dYC-Hd-oFE" id="dgl-CA-gPl"/>
                         <outlet property="currentWhetherImg" destination="DFf-SQ-5fl" id="f5k-86-zkR"/>
                         <outlet property="currentWhetherTypeLable" destination="7Ke-WD-q4H" id="dn5-Pd-UMu"/>
                         <outlet property="locationLbl" destination="Er3-58-EfH" id="H1X-Uk-r1B"/>

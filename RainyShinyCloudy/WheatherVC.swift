@@ -13,10 +13,14 @@ class WhetherVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
     //UpperSide Container
     @IBOutlet weak var DateLable: UILabel!
-    @IBOutlet weak var currentTemp: UILabel!
+    @IBOutlet weak var currentTempe: UILabel!
     @IBOutlet weak var locationLbl: UILabel!
     @IBOutlet weak var currentWhetherImg: UIImageView!
     @IBOutlet weak var currentWhetherTypeLable: UILabel!
+    
+    var currentWeather=CurrentWhether()
+    
+    
     
     //TableView
     @IBOutlet weak var tableView: UITableView!
@@ -27,9 +31,12 @@ class WhetherVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         tableView.delegate=self
         tableView.dataSource=self
+        currentWeather.downloadWheatherDetails {}
         
+        self.updateMainUI()
     }
     
     
@@ -47,6 +54,14 @@ class WhetherVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
         return cell
     }
 
+    
+    func updateMainUI() {
+        DateLable.text=currentWeather.date
+        currentTempe.text="\(currentWeather.currentTemp)"
+        locationLbl.text=currentWeather.cityName
+        currentWhetherTypeLable.text=currentWeather.whetherTyper
+        currentWhetherImg.image=UIImage(named: currentWeather.whetherTyper)
+    }
     
 
 }
